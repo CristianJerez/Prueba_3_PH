@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">destinosvacacionales</string>
+    <string name="title_activity_main">destinosvacacionales</string>
+    <string name="package_name">ionic.destinosvacacionales</string>
+    <string name="custom_url_scheme">ionic.destinosvacacionales</string>
+</resources>
