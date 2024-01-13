@@ -1,41 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { DataDestinoService, ViajeRemoto } from '../DataService/data-destino.service';
-import { addIcons } from 'ionicons';
-import { airplaneOutline, cameraOutline, trashOutline} from 'ionicons/icons'
+import { DestinosComponent } from './destinos/destinos.component';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [ IonicModule, CommonModule, FormsModule ],
+  imports: [IonicModule, CommonModule, FormsModule, DestinosComponent],
 })
-export class HomePage implements OnInit{
+export class HomePage {
 
-  viajes:ViajeRemoto[] = []
-  
-  constructor(    
-    private dataRepository: DataDestinoService) {addIcons({airplaneOutline, cameraOutline, trashOutline})}
-
-  async ngOnInit() {
-    this.viajes = await this.dataRepository.getListado()
-  }
-
-  cambiarPrecio(){
-
-  }
-
-  sacarFoto(){
-
-  }
-
-  eliminaDestino(){
-
-  }
+  constructor() { }
 
 }
-
-

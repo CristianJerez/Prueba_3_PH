@@ -1,26 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Destinos Vacacionales
-    </ion-title>
+    <ion-title> Destinos Vacacionales </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item *ngFor="let v of viajes">
-      <ion-label>{{v.name}}</ion-label>
-      <ion-buttons slot="end">
-        <ion-button (click)="cambiarPrecio">
-          <ion-icon name="airplane-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="sacarFoto">
-          <ion-icon name="camera-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="eliminaDestino">
-          <ion-icon name="trash-outline"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-item>
-  </ion-list>
+  <app-destinos> </app-destinos>
 </ion-content>
